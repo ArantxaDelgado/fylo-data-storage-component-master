@@ -1,0 +1,104 @@
+:root {
+    --paleblue: hsl(243, 100%, 93%);
+    --grayishblue: hsl(229, 7%, 55%);
+    --darkblue: hsl(228, 56%, 26%);
+    --verydarkblue: hsl(229, 57%, 11%);  
+}
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-image: url(images/bg-mobile.png);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkblue);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1rem;
+    width: 60%;
+}
+
+.logo {
+    margin-bottom: 0.5rem;
+}
+
+.menu--items {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bg-menu--items {
+    background-color: var(--verydarkblue);
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.contenedor--barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkblue);
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem;
+    
+}
+
+.espacio-vacio {
+    height: 1rem;
+    width: 100%;
+    background-color: var(--verydarkblue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.espacio-ocupado {
+    height: 0.8rem;
+    width: 81.5%;
+    background-color: red;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+
+.You’veused... {
+    text-align: center;
+}
+
+
+.gbdebarr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.GBL185 {
+font-size: 1.5rem;
+background-color: white;
+padding: 5px;
+border-radius: 10px;
+position: absolute;
+top: 78%;
+}
