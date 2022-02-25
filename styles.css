@@ -11,6 +11,8 @@
 
 body {
     background-image: url(images/bg-mobile.png);
+    font-size: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main{
@@ -18,6 +20,11 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    height: 100vh;
+}
+
+span {
+    color: var(--paleblue);
 }
 
 .menu {
@@ -64,8 +71,9 @@ main{
     width: 100%;
     border-radius: 5px;
     padding: 1rem;
-    
 }
+
+
 
 .espacio-vacio {
     height: 1rem;
@@ -77,28 +85,84 @@ main{
 }
 
 .espacio-ocupado {
+    display: flex;
+    justify-content: end;
+    align-items: center;
     height: 0.8rem;
     width: 81.5%;
-    background-color: red;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
     border-radius: 10px;
     margin-left: 1%;
 }
 
-.You’veused... {
-    text-align: center;
+.bolita {
+    height: 11px;
+    width: 11px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 1px;
+}
+
+.You’veused {
+    text-align: center; 
+    margin: 1%;
+    color: var(--grayishblue);
 }
 
 
 .gbdebarr {
     display: flex;
     justify-content: space-between;
+    color: var(--paleblue);
 }
 
 .GBL185 {
-font-size: 1.5rem;
+font-size: 1rem;
+display: flex;
+align-items: center;
 background-color: white;
 padding: 5px;
 border-radius: 10px;
 position: absolute;
-top: 78%;
+top: 65%;
+color: var(--verydarkblue);
+}
+
+.gbl185--span {
+    font-size: 0.3rem;
+    color: var(--grayishblue);
+}
+
+.attribution {
+    font-size: 0.3rem;
+}
+
+@media (min-width: 500px) {
+    main {
+        flex-direction: row;
+    }
+
+    .menu{
+        width: 60vh;
+        margin-right: 1rem;
+        margin-left: 2rem;
+    }
+
+    .barra {
+        width: 70vh;
+        margin-right: 2rem;
+        position: absolute;
+        bottom: 29% ;
+    }
+    .GBL185 {
+        position: absolute;
+        top: 39%;
+        right: 10%;
+        
+    }
+
+    
+    }
+
+
 }
