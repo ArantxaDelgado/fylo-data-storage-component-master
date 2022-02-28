@@ -6,14 +6,18 @@
 }
 
 /* Feel free to remove these styles or customise in your own stylesheet 👍*/
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 14px; text-align: center;
+    margin-top: 50px;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body {
     background-image: url(images/bg-mobile.png);
     background-repeat: no-repeat;
+    width: 100%;
     font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 main{
@@ -56,12 +60,14 @@ p {
     gap: 0.5rem;
 }
 
-.bg-menu--items {
+.icons {
     background-color: var(--verydarkblue);
-    height: 1.5rem;
-    width: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    }
+
+.move {
+    margin-top: 5px;
 }
 
 .contenedor--barra {
@@ -79,6 +85,7 @@ p {
     border-radius: 5px;
     padding: 1rem;
     position: relative;
+    max-width: 300px;
 }
 
 
@@ -123,6 +130,8 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     color: var(--paleblue);
+    margin-top: 0.5rem;
+    font-weight: 400;
 }
 
 .GBL185 {
@@ -130,53 +139,64 @@ font-size: 1rem;
 display: flex;
 align-items: center;
 background-color: white;
-padding: 5px;
+padding: 10px;
 border-radius: 10px;
 color: var(--verydarkblue);
+font-weight: 700;
+font-size: 2rem;
 position: absolute;
-bottom: -15px;
-left: 35%;
+bottom: -40px;
+left: 25%;
 }
 
 .gbl185--span {
-    font-size: 0.3rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
     color: var(--grayishblue);
-}
-
-.attribution {
-    font-size: 0.3rem;
+    margin-left: 0.5rem;
 }
 
 @media (min-width: 500px) {
     body {
-        background-color: var(--darkblue);
+        background-color: var(--verydarkblue);
         background-image: url(images/bg-desktop.png);
-        background-position: bottom;
+        background-size: cover;
+        background-position-y:550px;
+
+    }
 
     main {
         flex-direction: row;
         align-items: center;
         justify-content: center;
         margin-top: 22%;
+        gap: 5rem;
     }
 
     .menu{
         width: 20vw;
-        margin-right: 4rem;
-        margin-left: 2rem;
+        margin-right: -6rem;
+        margin-left:6rem;
+        padding-right: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        border-top-right-radius: 5rem;
     }
 
     .barra {
-        width: 45vw;
         margin-right: 2rem;
-        margin-top: 1rem;
-    }
-    .GBL185 {
-       
+        margin-top: 1.9rem;
+        padding-right: 90px;
+        padding: ;
     }
 
-    
+    .GBL185 {
+        bottom: 100px;
+        left: 55%;
     }
+    
+    
 
 
 }
